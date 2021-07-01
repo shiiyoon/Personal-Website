@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244.223" height="100.115" viewBox="0 0 244.223 100.115">
+  <defs>
+    <filter id="wave" x="0" y="0" width="244.223" height="66.115" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="wave-2" x="0" y="34" width="244.223" height="66.115" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="wave-3" x="0" y="34" width="244.223" height="66.115" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="wave_up" data-name="wave up" transform="translate(11.108 -291)">
+    <g transform="matrix(1, 0, 0, 1, -11.11, 291)" filter="url(#wave)">
+      <path id="wave-4" data-name="wave" d="M47,602.5,86,636l33-33.5L154,636l39-33.5L227,636l42-33.5" transform="translate(280.11 637.5) rotate(180)" fill="none" stroke="#232229" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -11.11, 291)" filter="url(#wave-2)">
+      <path id="wave-5" data-name="wave" d="M47,602.5,86,636l33-33.5L154,636l39-33.5L227,636l42-33.5" transform="translate(280.11 671.5) rotate(180)" fill="none" stroke="#232229" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -11.11, 291)" filter="url(#wave-3)">
+      <path id="wave-6" data-name="wave" d="M47,602.5,86,636l33-33.5L154,636l39-33.5L227,636l42-33.5" transform="translate(280.11 671.5) rotate(180)" fill="none" stroke="#232229" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

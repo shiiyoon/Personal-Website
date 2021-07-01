@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --basic-color: #547D74;
+    --sec-color: #84c7b8;
+    --white: #ffff;
+    --white-soft: #ffffff96;
+    --dark: #232229;
+    --dark-soft: #23222996;
+}
+*{
+    font-family: 'Lobster', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 500vh;
+}
+ /* navbar first */
+.navBar{
+    position: absolute;
+    z-index: 3;
+}
+.navbar{
+    padding: 0 3rem !important;
+}
+.nav-link{
+    transition: 0.5s;
+    color: var(--basic-color);
+}
+.nav-link:hover{
+    color: var(--sec-color);
+}
+.navbar .lineactive{
+    /* border-bottom: 2px solid var(--white) !important; */
+}
+.navbar li{
+    margin-right: 30px;
+}
+.navbar .nav-link{
+    font-size: 20px;
+}
+.navbarBtn:focus{
+    outline: none;
+}
+.navbarBtn i{
+    font-size: 30px;
+}
+ /* navbar sec */
+.navbar-sec{
+   background-color: var(--basic-color) !important;
+   box-shadow: 0 0 5px #00000020 !important;
+   position: fixed;
+   animation: Show 1s linear;
+}
+.navbar-sec .navbar{
+    padding: 0 3rem !important;
+}
+.navbar-sec .nav-link{
+    transition: 0.5s;
+}
+.navbar-sec .nav-link:hover{
+    color: var(--sec-color) !important;
+}
+.navbar-sec .lineactive{
+    color: var(--white) !important;
+    /* border-bottom: 2px solid var(--white) !important; */
+}
+@keyframes Show {
+    from{
+
+        transform: translateY(-200px);
+
+    }to{
+
+    transform: translateY(0);
+
+         }
+}
+.navbar-sec a{
+    color: var(--white) !important;
+}
+/* .out{
+    display:  block !important;
+}
+.in{
+    display: none !important;
+} */
+.collapse:not(.show) {
+    display: none !important;
+}
+/* home */
+.homeBg{
+    background-image: url('../img/Path\ 3.svg');
+    background-size: 100%;
+    width: 70% !important;
+    background-repeat: no-repeat;
+    position: absolute !important;
+    height: 100vh;
+    margin: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeBtn{
+    transition: 1s !important;
+    background-color: var(--white) !important;
+}
+.homeBtn:hover{
+    background-color: var(--sec-color) !important;
+}
+.textCover{
+    width: 300px;
+}
+.homeCircle1{
+    width: 50px;
+    display: block;
+    margin-left: -45px;
+    color: var(--sec-color);
+}
+.homeCircle2{
+    width: 30px;
+    margin-left: -70px;
+}
+.homeWave1{
+    width: 70px;
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+.homeWave2{
+    width: 70px;
+    position: absolute;
+    bottom: 70px;
+    right: 160px;
+}
+.homePhoto{
+    background-image: url('../img/anime-removebg-preview.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-position: right;
+}
+.socialIcon{
+    position: absolute;
+    left: 30px;
+    top: 360px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+.socialIcon a{
+    text-decoration: none !important;
+}
+.socialIcon i{
+    transition: 0.5s;
+}
+.socialIcon i:hover{
+    transform: scale(1.1);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 5px;
+    color: var(--sec-color) !important;
+}
+.SIChg{
+    color: var(--basic-color) !important;
+}
+.SI{
+    color: var(--white);
+}
+/* about */
+.about{
+    height: 100vh;
+}
+.aboutMe{
+     letter-spacing: 30px;
+     font-size: 50px;
+     line-height: 90px;
+}
+.aboutBtn{
+    transition: 1s !important;
+    color: var(--basic-color) !important;
+    border: 2px solid var(--basic-color) !important;
+}
+.aboutBtn:hover{
+    color: var(--basic-color) !important;
+    background-color: var(--sec-color) !important;
+    border: 2px solid var(--sec-color) !important;
+}
+/* project */
+.Project{
+    height: 80vh;
+}
+/* services */
+.services .card{
+    transition: 0.5s !important;
+    color: var(--basic-color);
+    background-color: var(--white-soft);
+}
+.services .card:hover{
+    transform: scale(1.07);
+    background-color: var(--basic-color);
+    color: var(--white);
+}
+/* contact */
+.last a{
+    text-decoration: none !important;
+    transition: 0.5s;
+    background-color: var(--basic-color) !important;
+}
+.last a:hover{
+    color: var(--white) !important;
+    background-color: var(--sec-color) !important;
+}
+.contactIcon{
+    width: 130px;
+    height: 20px;
+    transition: 0.5s;
+}
+.contactIcon:hover{
+    background-color: var(--white) !important;
+    color: var(--basic-color) !important;
+    transform: scale(1.07);
+}
+.counterBg{
+     position: fixed;
+     top: 200px;
+     z-index: -1;
+     background-color: var(--basic-color) !important;
+}
+.messBtn{
+    transition: 1s !important;
+    border: 2px solid var(--basic-color) !important;
+    height: 35px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.messBtn:hover{
+    color: var(--basic-color) !important;
+    background-color: var(--sec-color) !important;
+    border: 2px solid var(--sec-color) !important;
+}
+.Icon{
+    transition: 0.5s;
+}
+.Icon:hover{
+    transform: scale(1.08);
+}
+.dayMode{
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+}
+/* darkMode */
+body.darkMode{
+    background-color: var(--dark) !important;
+}
+.darkMode .home{
+    background-color: var(--dark) !important;
+}
+.darkMode .about{
+    background-color: var(--dark) !important;
+}
+.darkMode .services{
+    background-color: var(--dark) !important;
+}
+.darkMode .servicescd{
+    background-color: var(--dark) !important;
+}
+.darkMode .servicescd:hover{
+    background-color: var(--basic-color) !important;
+    color: var(--dark);
+}
+.darkMode .contact{
+    background-color: var(--dark) !important;
+}
+.darkMode .project{
+    background-color: var(--dark) !important;
+}
+.darkMode .ih-zoom-out{
+    color: var(--dark) !important;
+}
+.darkMode .homeBtn{
+    transition: 1s !important;
+    background-color: var(--dark) !important;
+}
+.darkMode .homeBtn:hover{
+    background-color: var(--sec-color) !important;
+}
+.darkMode .counter h1{
+    color: var(--dark) !important;
+}
+.darkMode .counter h2{
+    color: var(--dark) !important;
+}
+.darkMode .counter p{
+    color: var(--dark) !important;
+}
+.darkMode .socialIcon i{
+    transition: 0.5s;
+    color: var(--dark) !important;
+}
+.darkMode .socialIcon i:hover{
+    transform: scale(1.1);
+    background-color: var(--dark);
+    border-radius: 20px;
+    padding: 5px;
+    color: var(--sec-color) !important;
+}
+.darkMode .contactIcon{
+    width: 130px;
+    height: 20px;
+    transition: 0.5s;
+    color: var(--dark) !important;
+}
+.darkMode .contactIcon:hover{
+    background-color: var(--dark) !important;
+    color: var(--basic-color) !important;
+    transform: scale(1.07);
+}
+.darkMode .textCover p{
+    color: var(--dark) !important;
+}
+.darkMode .textCover h3{
+    color: var(--dark) !important;
+}
+.darkMode .textCover .slyw{
+    color: var(--sec-color) !important;
+}
+.darkMode .navbar-sec .nav-link{
+    color: var(--dark) !important;
+}
+.darkMode .navbar-sec .nav-link:hover{
+    color: var(--sec-color) !important;
+}
+.darkMode .dayMode {
+    background-color: var(--dark) !important;
+}
+.darkMode .contactlastText{
+    background-color: var(--dark) !important;
+}
+.darkMode .feather-arrow-up{
+    color: var(--dark) !important;
+}
+@media screen and (max-width: 800px) {
+    .navBar{
+        padding: 0 !important;
+    }
+    .navbar{
+        background-color: var(--white);
+        padding: 0 1rem !important;
+    }
+    .navbar ul{
+        margin-top: 20px;
+    }
+    .navbar li{
+        background-color: var(--basic-color);
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .navbar a{
+        color: var(--white) !important;
+        padding-left: 20px !important;
+    }
+    .navbar button:focus{
+        outline: none;
+    }
+    .navbar-sec .navbar{
+        padding: 0 1rem !important;
+    }
+    .textCover{
+        position: absolute;
+        top: 100px;
+    }
+    .dayMode{
+        position: fixed;
+        right: 70px;
+        bottom: 50px;
+    }
+    .darkMode .navbar{
+        background-color: var(--dark-soft);
+    }
+}
+@media screen and (max-width: 600px) {
+    #logo{
+        width: 70px !important;
+    }
+    .navBar{
+        padding: 0 !important;
+    }
+    .navbar{
+        background-color: var(--white-soft);
+    }
+    /* .navbar-sec{
+        width: 77% !important;
+    } */
+    .darkMode .navbar{
+        background-color: var(--dark-soft);
+    }
+    .homeBg{
+        width: 100% !important;
+        height: 430px;
+    }
+    .navbar ul{
+        margin: 20px 15px;
+    }
+    .navbar li{
+        padding-left: 10px;
+        margin-bottom: 10px;
+        background-color: var(--basic-color);
+        border-radius: 5px;
+        margin-right: 0 !important;
+    }
+    .navbar a{
+        color: var(--white) !important;
+    }
+    .navbar button:focus{
+        outline: none;
+    }
+    .homePhoto{
+        background-position: center;
+        background-size: auto;
+    }
+    .homeWave1 {
+        width: 50px;
+        position: absolute;
+        top: 177px;
+        left: 150px;
+    }
+    .textCover{
+        width: 300px;
+    }
+    .socialIcon{
+        margin-top: 50px;
+    }
+    .socialIcon i{
+        color: var(--basic-color) !important;
+    }
+    .socialIcon i:hover{
+        background-color: var(--basic-color);
+        color: var(--white) !important;
+    }
+    .darkMode .socialIcon i{
+        color: var(--basic-color) !important;
+    }
+    .darkMode .socialIcon i:hover{
+        color: var(--dark) !important;
+        background-color: var(--basic-color);
+    }
+    .aboutRow{
+        margin: 0 !important;
+    }
+    .project{
+        height: 240vh !important;
+    }
+    .services{
+        height: 210vh !important;
+    }
+    .servicescd{
+        padding: 20px;
+    }
+    .counterBg{
+        margin-left: -110px !important;
+    }
+    .counterRow{
+        margin: 0 !important;
+    }
+    .contact{
+        height: 105vh !important;
+    }
+    .mailBox{
+        padding: 0 !important;
+    }
+    .contactSocial {
+        justify-content: start !important;
+    }
+    .contactText{
+        justify-content: start !important;
+    }
+    .dayMode{
+        position: fixed;
+        right: 160px;
+        bottom: 50px;
+    }
+
+}
